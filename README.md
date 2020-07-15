@@ -1,10 +1,14 @@
-# pizza-hunt
+﻿# Social Networking API
 
-Social networking application, supported at the backend by Node.js, Express, a MongoDB and MongooseJS, integrating with an existing JavaScript based front-end.
+API back-end work required for a social networking application supported by a NoSQL MongoDB and MongooseJS library, API routes from an Express.js server, and routes tested through the Insomnia tool.
 
 ## GitHub URL
 
-https://github.com/ktrnthsnr/pizza-hunt
+https://github.com/ktrnthsnr/SocialNetworkingAPI
+
+## Insomnia walkthrough API endpoint routes
+
+<insert here>
 
 
 ## Table of Contents
@@ -14,62 +18,62 @@ https://github.com/ktrnthsnr/pizza-hunt
 * [Installations](#installations)
 * [Usage](#usage)
 * [Testing](#testing)
+* [Userstory](#Userstory)
 * [Contribution](#contribution)
 
 ## Description
 
-- This repo's work is focused on building out the back-end and middleware of a social networking application, pizz-hunt, that integrates with an existing front-end. From the Heroku pizza-hunt website, users may sign-in and update a pizza with custom topping, and also interact with a list of other users, discussing the pizza toppings, crust and sauces of their choice. In the website, a user may post some of their thoughts and also react to each other's thoughts. Additionally, users may be able to edit or delete these as well. 
+- This is the API for a social networking application, where users may create a list of friends, then post some of their thoughts and also react to each other's thoughts. Additionally, users may be able to edit or delete these as well. 
 
-- The Node.js based API uses Express.js for routing, MongoDB as data storage for the NoSQL backend database, Mongoose Object Data Management (ODM) system as the middleware to create and manage the database queries on startup, and Moment.js npm package to format any time dependent aspects of the application. 
+- The Node.js based API uses Express.js for routing, MongoDB as data storage for the NoSQL backend database, Mongoose Object Data Management (ODM) system to create and manage the database queries on startup, and Moment.js npm package to format any time dependent aspects of the application. 
 
-- This Readme.md includes a walkthrough of the backend portion of the work, the majority of the work for this project, required by the website to provide large amounts of unstructured data. 
-- The first walkthrough shows the application from the user's point of view, throught the Heroku website features.
-- The second walkthrough listed under the TOC Usage, shows the application as if it were cloned to a localhost and started at the Node.js commandline, with the API endpoints viewed through the Insomnia tool. Invoking the application at the bash terminal, the JavaScript begins with the start up of the Express.js server which then creates the Mongoose table models, syncing to the MongoDB backend. Then through the debugging Insomnia tool, you can view the API routes and JSON output shown when a user is created, their friends are added to their lists, and their thoughts and reactions to their friends' thoughts are added, updated or removed - basically the social interaction of a group of friends!
+- This Readme.md includes a walkthrough of the backend portion of the work required by a website to provide large amounts of unstructured data.  The walkthrough listed under the TOC Usage, shows the application if it were cloned to a localhost and started at the Node.js commandline, with the API endpoints viewed through the Insomnia tool. Invoking the application at the bash terminal, the JavaScript begins with the start up of the Express.js server which then creates the Mongoose table models, syncing to the MongoDB backend. Then through the debugging Insomnia tool, you can view the API routes and JSON output shown when a user is created, their friends are added to their lists, and their thoughts and reactions to their friends' thoughts are added, updated or removed - basically the social interaction of a group of friends!
 
 ## Technology
 
-MongoDB, Mongoose JS, Node.js, npm, Express.js, Moment.js, Insomnia, JavaScript, ES6, Heroku, HTML, CSS
+MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Moment.js
 
 ## Installations
 
-- For local installations, below are various steps required.
-- Prereq for your desktop: install VSCode, Node.js, and MySQL http://dev.mysql.com/downloads/
+- Prereq: install VSCode, Node.js, and MySQL http://dev.mysql.com/downloads/
 - After cloning the GitHub repo to your local drive, run the following in the VSCode command-line terminal
 - Install all components listed within the package.json file for npm
 - $ `npm i`
--
 - For custom installations, start with initializing npm
 - $ `npm init -y` or $ `npm install`
+- Install npm express, more info https://www.npmjs.com/package/express
+- $ `npm install express`
 - Manaully update the package.json to  `"main": "server.js",` instead of index.js
 - Create a .gitignore file in the root and add `node_modules` to this file
 - If you need to re-add the dependencies, run $ `npm install`
-- Install npm express, more info https://www.npmjs.com/package/express
-- $ `npm install express`
-- Install MongoDB, first create a `c:\data\db` directory on your root, then install the Community Server from https://www.mongodb.com/try/download/community, excluding the compass from the installation, and adding the /bin folder to the environment variable PATH.
-- Install the middleware MoongooseJS library
+- Install MongoDB, first create a `c:/data/db` directory on your root, then install the Community Server from https://www.mongodb.com/try/download/community, excluding the compass from the installation, and adding the /bin folder to the environment variable PATH.
+- Install the MoongooseJS library
 - $ `npm install mongoose`
 - Install npm Moment.js
 - $ `npm install moment`
 
 ## Usage
 
-- The application may be viewed through the Heroku website.
-- However, if cloning locally from github, complete the installation, then start up at the bash commandline, by typing
+- If this applicatin is cloned from github, completed the installation `npm i`, then start up at the bash commandline, by typing
 - $ `npm start`
-- Here is walkthrough of the application from the localhost:3001
-https://drive.google.com/file/d/1cd6HT95vRU7Z84S9-gvTwtw4YZ06W2ps/view
-- Create  pizza page
-- ![Create of Pizzas](./img/createpizza.jpg "Create a pizzas")
-- List of pizzas page
-- ![List of Pizzas](./listofpizzas.jpg "List of pizzas")
-- Comments page
-![Comments](./img/comments.jpg "Comment on a pizzas")
+- Here is a sample containing JSON input and output for adding a user from POST API endpoint http://localhost:3004/api/users
+![PostUser](./img/POSTuser.jpg "post user")
+
 
 ## Testing
 
-- For testing the API routes locally, here is an Insomnia walkthrough to view GET, POST, PULL, DELETE API routess
-https://drive.google.com/file/d/14Qql6wSrIxdrW3dv8PRZbT6fr3WiANVa/view
+- For testing the routes locally, here is an Insomnia API endpoint to GET, POST, PUT, DELETE a user for example,
+- GET http://localhost:3004/api/users
+- POST http://localhost:3004/api/users/(ID) (adding JSON for the required values within the model)
+- PUT http://localhost:3004/api/users/(ID) (adding JSON for the required values within the model)
+- DELETE http://localhost:3004/api/users/(ID)
 
+
+## Userstory
+
+AS A social media startup
+I WANT an API for my social network that uses a NoSQL database
+SO THAT my website can handle large amounts of unstructured data
 
 ## Contribution
 

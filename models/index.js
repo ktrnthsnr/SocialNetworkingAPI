@@ -1,4 +1,6 @@
-const Pizza = require('./Pizza');
-const Comment = require('./Comment');
+// index for models
+const user = require('./user');
+const thought = require('./thought');
 
-module.exports = { Pizza, Comment };
+//export modules
+module.exports = { user, thought };

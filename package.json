@@ -1,8 +1,8 @@
 {
-  "name": "pizz-hunt",
+  "name": "socialNew",
   "version": "1.0.0",
   "private": true,
-  "description": "Social networking mobile application, containing a MongoDB and Mongoose JS API back-end and middleware, integrated with an existing Node.js based front-end.",
+  "description": "Social networking mobile application.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

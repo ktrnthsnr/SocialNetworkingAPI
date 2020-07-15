@@ -1,16 +1,21 @@
 const router = require('express').Router();
+
+// declare path
 const path = require('path');
 
+// route user list to /
 router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/pizza-list.html'));
+  res.sendFile(path.join(__dirname, '../../public/user-list.html'));
 });
 
-router.get('/add-pizza', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/add-pizza.html'));
+// route user list to /add-user
+router.get('/add-user', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../public/add-user.html'));
 });
 
-router.get('/pizza', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/pizza.html'));
+router.get('/user', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../public/user.html'));
 });
 
+// export routes
 module.exports = router;

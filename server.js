@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3004;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -10,8 +10,8 @@ app.use(express.static('public'));
 // imports routes from /routes/index.js, whereby index is the hub for other imported routes
 app.use(require('./routes'));
 
-// mongoose library connection to local mongo database
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pizza-hunt', {
+// mongoose library connection to local mongo database (update public/assets/js/idb.js as well!)
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/socialnetapi4', {
   useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true

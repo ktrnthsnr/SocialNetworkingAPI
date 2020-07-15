@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Team Chat</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Muli+Muli&display=swap&family=Muli:400,700|Rubik:400,400i,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="py-3 mb-3">
+    <div class="flex-row justify-space-between align-center container-fluid mx-auto">
+      <a href="/">
+        <h1 class="bg-dark p-3 col-12 col-lg-8 logo mb-3 rounded">Team Chat</h1>
+      </a>
+
+      <h3 class="text-light bg-dark p-3 mb-3 rounded">
+        Create Profile
+      </h3>
+    </div>
+  </header>
+
+  <main class="container-fluid flex-row mx-auto justify-space-between">
+    <div class="col-12 py-3 px-4 my-4 bg-dark mb-3 rounded">
+      <h2 class="text-light">Create a new profile</h2>
+    </div>
+
+    <section class="bg-dark p-3 col-12 col-lg-8 mb-3 round-25-80">
+      <h2 class="text-light ">Enter your category</h2>
+      <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+        <div class="form-container">
+          <form id="user-form">
+            <div class="mb-2">
+              <label for="user-name" class="form-label">User Name</label>
+              <input type="text" id="user-name" name="user-name" class="form-input" placeholder="Enter user name"
+                required />
+            </div>
+            <div class="mb-2">
+              <label for="created-by" class="form-label">Email</label>
+              <input type="text" id="created-by" name="created-by" class="form-input" placeholder="Add your name"
+                required />
+            </div>
+            <div class="mb-2">
+              <label for="user-profession" class="form-label">Profession</label>
+              <select id="user-profession" class="form-input">
+                <option value="Development">Development</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Operations">Operations</option>
+                <option value="Manager">Technical Manager</option>
+                <option value="Business">Business Analyst</option>
+              </select>
+            </div>
+            <h3 class="text-tertiary">Select one or more categories</h3>
+            <div class="flex-row justify-space-between">
+              <div class="col-auto">
+                <div>
+                  <input type="checkbox" id="HTML" name="choice" value="HTML">
+                  <label for="HTML">HTML</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="CSS" name="choice" value="CSS">
+                  <label for="CSS">CSS</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="JavaScript" name="choice" value="JavaScript">
+                  <label for="JavaScript">JavaScript</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="jQuery" name="choice" value="jQuery">
+                  <label for="jQuery">jQuery</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="Responsive" name="choice" value="Responsive">
+                  <label for="Responsive">Responsive Design</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="Bootstrap" name="choice" value="Bootstrap">
+                  <label for="Bootstrap">Bootstrap</label>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div>
+                  <input type="checkbox" id="Handlebars" name="Handlebars">
+                  <label for="Handlebars">Handlebars</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="Local Storage" name="choice" value="Local Storage">
+                  <label for="Local Storage">Local Storage</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="React.js" name="choice" value="React.js">
+                  <label for="React.js">React.js</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="Heroku" name="choice" value="Heroku">
+                  <label for="Heroku">Heroku</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="Git" name="choice" value="Git">
+                  <label for="Git">Git</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="MySQL" name="choice" value="MySQL">
+                  <label for="MySQL">MySQL</label>
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div>
+                  <input type="checkbox" id="MongoDB" name="choice" value="MongoDB">
+                  <label for="MongoDB">MongoDB</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="Express.js" name="choice" value="Express.js">
+                  <label for="Express.js">Express.js</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="MERN" name="choice" value="MERN">
+                  <label for="MERN">MERN Stack</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="Session Storage" name="choice" value="Session Storage">
+                  <label for="Session Storage">Session Storage</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="NPM" name="choice" value="NPM">
+                  <label for="NPM">NPM</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="VSCode" name="choice" value="VSCode">
+                  <label for="VSCode">VSCode</label>
+                </div>
+              </div>
+
+
+              <div class="col-auto">
+                <div id="custom-category-list"></div>
+              </div>
+            </div>
+
+            <div class="w-100 display-block"></div>
+
+            <label for="new-choice" class="form-label">Add a new category</label>
+            <input type="text" id="new-choice" name="new-choice" class="form-input" placeholder="Add category" />
+
+            <button type="button" id="add-choice" class="btn">Add category</button>
+
+            <div class="my-4 border-light-top display-block w-100"></div>
+
+            <button type="submit" class="btn w-100 m-auto">Submit Profile</button>
+          </form>
+        </div>
+    </section>
+
+    <section class="bg-dark p-3 col-12 col-lg-4 mb-3 round-25-80 min-60-vh">
+      <h2 class="text-light px-2">View all users</h2>
+      <nav>
+        <a class="btn display-block mb-3 rounded" href="/">All users</a>
+      </nav>
+    </section>
+
+    </div>
+  </main>
+  <script src="./assets/js/add-user.js"></script>
+
+  <!-- IndexedDB -->
+  <script src="./assets/js/idb.js"></script>
+
+</body>
+
+</html>
