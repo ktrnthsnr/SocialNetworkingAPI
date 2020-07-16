@@ -8,8 +8,7 @@ https://github.com/ktrnthsnr/SocialNetworkingAPI
 
 ## Insomnia walkthrough API endpoint routes
 
-<insert here>
-
+https://drive.google.com/file/d/1MhNUBRcjmUpWy7scgmKuogrN39fYWdmA/view
 
 ## Table of Contents
 
@@ -56,17 +55,17 @@ MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Momen
 
 - If this applicatin is cloned from github, completed the installation `npm i`, then start up at the bash commandline, by typing
 - $ `npm start`
-- Here is a sample containing JSON input and output for adding a user from POST API endpoint http://localhost:3004/api/users
-![PostUser](./img/POSTuser.jpg "post user")
+- Here is a sample containing JSON input and output for adding a user from POST API endpoint http://localhost:3005/api/users
+![PostUser](./img/1.createAUser "post user")
 
 
 ## Testing
 - Download the Insomnia Core API tool https://insomnia.rest/download/
 - For testing the routes locally, here are Insomnia API endpoints to GET, POST, PUT, DELETE a user for example,
-- GET http://localhost:3004/api/users
-- POST http://localhost:3004/api/users/(ID) (adding JSON for the required values within the model)
-- PUT http://localhost:3004/api/users/(ID) (adding JSON for the required values within the model)
-- DELETE http://localhost:3004/api/users/(ID)
+- GET http://localhost:3005/api/users
+- POST http://localhost:3005/api/users/(ID) (adding JSON for the required values within the model)
+- PUT http://localhost:3005/api/users/(ID) (adding JSON for the required values within the model)
+- DELETE http://localhost:3005/api/users/(ID)
 
 - Troubleshooting:
 - For any issues with the MongoDB versioning control, before instantiating the Express server `npm start`, you can reset the PORT under server.js and the database name under server.js and idb.js.
