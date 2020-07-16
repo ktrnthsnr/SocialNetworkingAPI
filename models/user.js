@@ -21,7 +21,7 @@ const userSchema = new Schema(
       trim: true
     },
 
-    // with Moment.js installed, use Getter with Mongoose, by adding a get key to the field
+    // with Moment.js installed, use Getter with Mongoose, by adding the get key to the field
     createdAt: {
       type: Date,
       default: Date.now,

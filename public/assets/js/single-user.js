@@ -15,7 +15,7 @@ function getuser() {
   const searchParams = new URLSearchParams(document.location.search.substring(1));
   const userId = searchParams.get('id');
 
-  // get userInfo
+  // GET single user Info
   fetch(`/api/users/${userId}`)
     .then(response => {
       // error handling, check for a 4xx or 5xx error from server
@@ -34,11 +34,8 @@ function getuser() {
 
 function printuser(userData) {
   console.log(userData);
-
   userId = userData._id;
-
   const { userName, email, createdAt, profession, category, thoughts } = userData;
-
   $userName.textContent = userName;
   $email.textContent = email;
   $createdAt.textContent = createdAt;
@@ -46,7 +43,6 @@ function printuser(userData) {
   $infoList.innerHTML = category
     .map(choice => `<span class="col-auto m-2 text-center btn">${choice}</span>`)
     .join('');
-
   if (thoughts && thoughts.length) {
     thoughts.forEach(printthought);
   } else {
@@ -59,7 +55,6 @@ function printthought(thought) {
   // create div to hold thought and reactions
   const thoughtDiv = document.createElement('div');
     thoughtDiv.classList.add('my-2', 'card', 'p-2', 'w-100', 'text-dark', 'rounded');
-
   const thoughtContent = `
       <h5 class="text-dark">${thought.friend} thought on ${thought.createdAt}:</h5>
       <p>${thought.thoughtText}</p>
@@ -106,6 +101,7 @@ function handleNewthoughtSubmit(event) {
   if (!thoughtText || !friend) {
     return false;
   }
+  // POST method to add a new thought by UserID
   const formData = { thoughtText, friend };
     // required to POST the form data
     fetch(`/api/thoughts/${userId}`, {
@@ -159,6 +155,7 @@ function handleNewreactionSubmit(event) {
     return false;
   }
   const formData = { friend, reactionBody };
+  // PUT method to add reaction
   fetch(`/api/thoughts/${userId}/${thoughtId}`, {
     method: 'PUT',
     headers: {

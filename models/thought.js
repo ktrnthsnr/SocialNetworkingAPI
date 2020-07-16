@@ -19,7 +19,8 @@ const reactionSchema = new Schema(
           maxlength: 280
         },
         friend: {
-          type: String
+          type: String,
+          required: true
         },
         createdAt: {
           type: Date,
@@ -79,20 +80,3 @@ const thought = model('thought', thoughtSchema);
 
 module.exports = thought;
 
-
-// previous:  adding reactions to thought.js
-    // const reactionSchema = new Schema(
-    //   {
-    //     reactionBody: {
-    //       type: String
-    //     },
-    //     friend: {
-    //       type: String
-    //     },
-    //     createdAt: {
-    //       type: Date,
-    //       default: Date.now,
-    //       get: createdAtVal => moment(createdAtVal).format('MMM DD, YYYY [at] hh:mm a')
-    //     }
-    //   }
-    // );

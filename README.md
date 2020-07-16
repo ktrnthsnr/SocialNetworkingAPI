@@ -61,13 +61,15 @@ MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Momen
 
 
 ## Testing
-
-- For testing the routes locally, here is an Insomnia API endpoint to GET, POST, PUT, DELETE a user for example,
+- Download the Insomnia Core API tool https://insomnia.rest/download/
+- For testing the routes locally, here are Insomnia API endpoints to GET, POST, PUT, DELETE a user for example,
 - GET http://localhost:3004/api/users
 - POST http://localhost:3004/api/users/(ID) (adding JSON for the required values within the model)
 - PUT http://localhost:3004/api/users/(ID) (adding JSON for the required values within the model)
 - DELETE http://localhost:3004/api/users/(ID)
 
+- Troubleshooting:
+- For any issues with the MongoDB versioning control, before instantiating the Express server `npm start`, you can reset the PORT under server.js and the database name under server.js and idb.js.
 
 ## Userstory
 
