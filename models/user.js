@@ -40,7 +40,7 @@ const userSchema = new Schema(
         ref: 'thought'
       }
     ],
-    newfriends: [
+    newfriends: [ //not used, need to remove.
       {
         type: Schema.Types.ObjectId,  //associate User and friend (in same model) through ObjectID
         ref: 'user'
