@@ -8,7 +8,7 @@ API back-end work required for a social networking application supported by a No
 - https://ktrnthsnr-social-net-api.herokuapp.com/
 
 
-## Insomnia walkthrough API endpoint routes
+## Insomnia walkthrough of API routes
 
 https://drive.google.com/file/d/1MhNUBRcjmUpWy7scgmKuogrN39fYWdmA/view
 
@@ -32,7 +32,7 @@ https://drive.google.com/file/d/1MhNUBRcjmUpWy7scgmKuogrN39fYWdmA/view
 
 ## Technology
 
-MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Moment.js
+MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Moment.js, Heroku, mLab
 
 ## Installations
 
