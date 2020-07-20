@@ -66,10 +66,10 @@ MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Momen
 Create a Profile
 - ![createprofile](./img/createProfile.jpg "create profile")
 
-UserList
+Show a User List
 - ![userlist](./img/userList.jpg  "user list")
 
-Thoughts and Reactions
+Show Thoughts and Reactions
 - ![thoughtsReactions](./img/thoughtReactions.jpg "thoughts reactions")
 
 
