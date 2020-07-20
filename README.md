@@ -1,6 +1,6 @@
 ﻿# Social Networking API
 
-API back-end work required for a social networking application supported by a NoSQL MongoDB and MongooseJS library, API routes from an Express.js server, and routes tested through the Insomnia tool.
+This project highlights the API back-end work required for a social networking application supported by a NoSQL MongoDB and MongooseJS library, showing through an Insomnia video walkthrough of various GET, POST, PUT, DELETE API routes from an Express.js server.  The Team Chat social networking website has also been combined with a frontend and uploaded to Heroku to demonstrate the application in work, where users may add their profile, and thoughts and reactions to these as well.
 
 ## GitHub & Website URL
 
