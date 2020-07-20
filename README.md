@@ -2,9 +2,11 @@
 
 API back-end work required for a social networking application supported by a NoSQL MongoDB and MongooseJS library, API routes from an Express.js server, and routes tested through the Insomnia tool.
 
-## GitHub URL
+## GitHub & Website URL
 
-https://github.com/ktrnthsnr/SocialNetworkingAPI
+- https://github.com/ktrnthsnr/SocialNetworkingAPI
+- https://ktrnthsnr-social-net-api.herokuapp.com/
+
 
 ## Insomnia walkthrough API endpoint routes
 
@@ -34,7 +36,7 @@ MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Momen
 
 ## Installations
 
-- Prereq: install VSCode, Node.js, and MySQL http://dev.mysql.com/downloads/
+- Prereq: install VSCode, Node.js on your desktop
 - After cloning the GitHub repo to your local drive, run the following in the VSCode command-line terminal
 - Install all components listed within the package.json file for npm
 - $ `npm i`
