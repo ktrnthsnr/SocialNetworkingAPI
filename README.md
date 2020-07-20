@@ -57,8 +57,20 @@ MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Momen
 
 - If this applicatin is cloned from github, completed the installation `npm i`, then start up at the bash commandline, by typing
 - $ `npm start`
+
 - Here is a sample containing JSON input and output for adding a user from POST API endpoint http://localhost:3005/api/users
 ![PostUser](./img/1.createAUser.jpg "post user")
+
+- The website hosted on Heroku and served on the backend from the mLab backend, shows new users, thoughts and reactions as follows:
+
+Create a Profile
+- ![createprofile](./img/createProfile.jpg "create profile")
+
+- UserList
+![userlist](./img/userList.jpg  "user list")
+
+Thoughts and Reactions
+- ![thoughtsReactions](./img/thoughtReactions.jpg "thoughts reactions")
 
 
 ## Testing
